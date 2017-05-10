@@ -1,42 +1,75 @@
+/* Colors used for reference:
+  Darker Gray: #4d4d4d
+    - used for "COLMAR" at top of page, menu at top right of page, headings,
+    and 'Start here' button
+
+  Lighter Gray: #999999
+    - used for "Academy" at top of page,
+
+  Lightest Gray: #e6e6e6
+    - used for background color in some sections and footer border
+
+  White:
+    - used for background color on some sections
+
+
+*/
+
+
 /* Universal Styles */
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
-  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v8/cSNs3NwpEgPVRQzvkh3NeQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(
+    https://fonts.gstatic.com/s/nunito/v8/cSNs3NwpEgPVRQzvkh3NeQ.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+  U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
-  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v8/NcqjkPJTQZlJIFxZdZcTe1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(
+    https://fonts.gstatic.com/s/nunito/v8/NcqjkPJTQZlJIFxZdZcTe1tXRa8TVwTICgirnJhmVJw.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+  U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
   font-family: 'Oxygen';
   font-style: normal;
   font-weight: 400;
-  src: local('Oxygen'), local('Oxygen-Regular'), url(https://fonts.gstatic.com/s/oxygen/v5/78wGxsHfFBzG7bRkpfRnCQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(
+    https://fonts.gstatic.com/s/oxygen/v5/78wGxsHfFBzG7bRkpfRnCQ.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+  U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 600;
-  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v11/xkvoNo9fC8O2RDydKj12b_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(
+    https://fonts.gstatic.com/s/raleway/v11/xkvoNo9fC8O2RDydKj12b_k_vArhqVIZ0nv9q090hN8.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+  U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(
+    https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+  U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 html {
@@ -73,13 +106,17 @@ h4 {
   font-size: 1.25rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Header & Nav Section styling */
-header .container {
+header {
+  display: flex;
+  justify-content: space-between;
   padding-left: 1.5rem;
   height: 4rem;
   width: 100%;
-  display: flex;
-  align-items: center;
   position: fixed;
   z-index: 10;
   background-color: white;
@@ -201,4 +238,45 @@ nav span {
   margin-top: .5rem;
   color: #666666;
   width: 80%;
+}
+
+/* Thesis exhibit section styling*/
+.thesis-content {
+  margin: 2rem 0;
+  display: flex;
+}
+
+.thesis-content-left-half {
+  max-width: 60%;
+  margin-left: 1.5rem;
+}
+
+.thesis-content-text h4 {
+  margin-top: 1.5rem;
+}
+
+.thesis-content-text p {
+  margin-top: 1rem;
+}
+
+.thesis-content-right-half {
+  margin: 0 1rem 0 .25rem;
+}
+
+/* Footer styling */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 0 4rem 0;
+  border-top: 1px solid #e6e6e6;
+  color:
+}
+
+footer div {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+.legal span {
+  padding-right: 1rem;
 }
