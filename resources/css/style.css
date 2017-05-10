@@ -1,4 +1,4 @@
-/*Universal Styles*/
+/* Universal Styles */
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -61,7 +61,19 @@ div {
   margin-right: 1.5rem;
 }
 
-/*Header & Nav Section styling*/
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Header & Nav Section styling */
 header .container {
   padding-left: 1.5rem;
   height: 4rem;
@@ -78,17 +90,17 @@ header .container {
   width: auto;
 }
 
-header h3 span {
+header h6 span {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   color: #4d4d4d;
   font-size: 1rem;
 }
 
-header h3 {
+header h6 {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  color: #b3b3b3;
+  color: #999999;
   font-size: 1rem;
 }
 
@@ -100,7 +112,7 @@ nav span {
   padding-right: 1rem;
 }
 
-/*Main Banner Section styling*/
+/* Main Banner Section styling */
 .main-banner {
   width: 100%;
   padding: 6rem 1.5rem 2rem 1.5rem;
@@ -111,13 +123,18 @@ nav span {
   margin-left: 1rem;
 }
 
-/*Info Banner Section styling*/
+/* Info Banner Section styling */
 .info-banner {
   width: 100%;
   padding: 2rem 1.5rem;
 }
 
-.highlights-content {
+.info-text-container {
+  width: 60%;
+
+}
+
+.right-half {
   display: block;
 }
 
@@ -128,11 +145,60 @@ nav span {
   align-items: center;
 }
 
-.highlights-content .info-block {
+.right-half .info-block {
   border: 1px solid #e6e6e6;
 }
 
 .info-block img {
   width: 35%;
   height: auto;
+}
+
+/* Learning Section styling */
+.learning-section {
+  background-color: #e6e6e6;
+}
+
+.title {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.courses-container {
+  margin: 2rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-box {
+  width: 30%;
+  margin: 0rem 1rem;
+  background-color: white;
+}
+
+.course-box img {
+  width: 100%;
+  height: auto;
+}
+
+.top-half {
+  margin-bottom: 1rem;
+}
+
+.bottom-half {
+  margin-bottom: 2rem;
+}
+
+.box-content {
+  margin: 1rem 1rem 1.5rem 1rem;
+}
+
+.box-content h4 {
+  line-height: 2;
+}
+
+.box-content p {
+  margin-top: .5rem;
+  color: #666666;
+  width: 80%;
 }
