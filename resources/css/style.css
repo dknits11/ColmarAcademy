@@ -1,10 +1,11 @@
 /* Colors used for reference:
   Darker Gray: #4d4d4d
     - used for "COLMAR" at top of page, menu at top right of page, headings,
-    and 'Start here' button
+    'Start here' button, background for main banner section on mobile,
 
   Gray: #999999
-    - used for "Academy" at top of page and text in the Start Learning section
+    - used for "Academy" at top of page, footer, and text in the Start Learning,
+    as well as Thesis exhibit section
 
   Lighter Gray: #e6e6e6
     - used for background color in some sections and footer border
@@ -17,6 +18,16 @@
     - used for background color on some sections
 */
 
+/* Fonts used for reference:
+  Nunito
+    - used for COLMAR ACADEMY text in header
+
+  Oxygen
+    - used for menu (header & Footer) & content
+
+  Raleway
+    - used for headers
+*/
 
 /* Universal Styles */
 @font-face {
@@ -82,10 +93,6 @@ body {
   font-family: "Oxygen", sans-serif;
 }
 
-.container {
-  margin: 0px auto;
-}
-
 div {
   display: block;
 }
@@ -117,8 +124,8 @@ h4 {
 }
 
 h6 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
   font-size: 1rem;
   color: #4d4d4d;
 }
@@ -132,7 +139,7 @@ a {
 }
 
 /* Header & Nav Section styling */
-header {
+.header {
   display: flex;
   justify-content: space-between;
   padding-left: 1.5rem;
@@ -143,12 +150,12 @@ header {
   background-color: white;
 }
 
-#logo-and-text {
+.logo-and-text {
   display: flex;
   align-items: center;
 }
 
-#logo img {
+.logo img {
   height: 3rem;
   width: auto;
 }
@@ -167,7 +174,7 @@ header h6 {
   font-size: 1rem;
 }
 
-#desktop-menu {
+.desktop-menu {
     display: flex;
     align-items: center;
 }
@@ -177,10 +184,13 @@ nav span {
 }
 
 nav span a {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
   color: #4d4d4d;
 }
 
-/* Main Banner Section styling */
+/* Main Banner Section styling*/
 .main-banner {
   padding: 6rem 0 2rem 0;
   background-color: #e6e6e6;
@@ -291,7 +301,7 @@ nav span a {
 }
 
 .courses-container {
-  margin: 2rem 4rem;
+  margin: 2rem 4rem 0 4rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -338,18 +348,23 @@ nav span a {
 .thesis-content-left-half {
   max-width: 60%;
   margin-left: 1.5rem;
+  margin-right: 1rem;
 }
 
 .thesis-content-text h4 {
   margin-top: 1.5rem;
 }
 
-.thesis-content-text p {
+.thesis-content p {
   margin-top: 1rem;
+  color: #999999;
+  font-size: 1rem;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
 }
 
 .thesis-content-right-half {
-  margin: 0 1rem 0 .25rem;
+  line-height: 1.5;
 }
 
 /* Footer styling */
@@ -358,7 +373,7 @@ footer {
   justify-content: space-between;
   margin: 0rem 0 4rem 0;
   border-top: 1px solid #e6e6e6;
-  color:
+  color: #999999;
 }
 
 footer div {
@@ -368,4 +383,100 @@ footer div {
 
 .legal span {
   padding-right: 1rem;
+}
+
+footer a {
+  color: #999999;
+}
+
+/* Screen size styling */
+/* Desktop styling */
+@media only screen and (min-width: 481px){
+  .header.mobile {
+    display: none;
+  }
+
+}
+
+
+/* Mobile screen size */
+@media only screen and (max-width: 480px){
+  /* Universal styles - mobile */
+  h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #4d4d4d;
+  }
+
+  h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #4d4d4d;
+  }
+
+  h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #4d4d4d;
+  }
+
+  h6 {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #4d4d4d;
+  }
+
+
+  /* Header section */
+  .header.desktop {
+    display: none;
+  }
+
+  .header.mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header.mobile nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header.mobile img {
+    height: 2rem;
+  }
+
+  /* Main banner section */
+  .main-banner {
+    display: block;
+    padding-top: 4rem;
+    width: 100%;
+  }
+
+  .main-left-half {
+    margin: 0 0 0 0;
+    height: 11.25rem;
+    width: 100%;
+  }
+
+  .main-left-half .image-container img {
+    display: none;
+  }
+
+  .main-right-half {
+    padding: 2rem 1rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .word-container {
+    margin: 0;
+  }
+
 }
