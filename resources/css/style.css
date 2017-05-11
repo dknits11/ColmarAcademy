@@ -3,16 +3,18 @@
     - used for "COLMAR" at top of page, menu at top right of page, headings,
     and 'Start here' button
 
-  Lighter Gray: #999999
-    - used for "Academy" at top of page,
+  Gray: #999999
+    - used for "Academy" at top of page and text in the Start Learning section
 
-  Lightest Gray: #e6e6e6
+  Lighter Gray: #e6e6e6
     - used for background color in some sections and footer border
+
+  Blue: #66a3ff
+    - used for "Read More" in info section
+
 
   White:
     - used for background color on some sections
-
-
 */
 
 
@@ -89,25 +91,44 @@ div {
 }
 
 .image-container img {
-  width: 60%;
+  width: 100%;
   height: auto;
-  margin-right: 1.5rem;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #4d4d4d;
 }
 
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #4d4d4d;
 }
 
 h4 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  color: #4d4d4d;
+}
+
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #4d4d4d;
 }
 
 a {
   text-decoration: none;
+}
+
+.gray-bkrd {
+  background-color: #e6e6e6;
 }
 
 /* Header & Nav Section styling */
@@ -120,6 +141,11 @@ header {
   position: fixed;
   z-index: 10;
   background-color: white;
+}
+
+#logo-and-text {
+  display: flex;
+  align-items: center;
 }
 
 #logo img {
@@ -141,54 +167,117 @@ header h6 {
   font-size: 1rem;
 }
 
-header nav span {
-  display: flex;
+#desktop-menu {
+    display: flex;
+    align-items: center;
 }
 
 nav span {
   padding-right: 1rem;
 }
 
+nav span a {
+  color: #4d4d4d;
+}
+
 /* Main Banner Section styling */
 .main-banner {
-  width: 100%;
-  padding: 6rem 1.5rem 2rem 1.5rem;
+  padding: 6rem 0 2rem 0;
   background-color: #e6e6e6;
+  display: flex;
+}
+
+.main-left-half {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  max-width: 60%;
+}
+
+.main-right-half {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.25;
+  max-width: 40%;
 }
 
 .word-container {
-  margin-left: 1rem;
+  max-width: 80%;
+}
+
+.word-container h2 {
+  margin: 2rem 0;
+}
+
+#button {
+  background-color: #4d4d4d;
+  padding: .5rem 1.5rem .5rem 1.5rem;
+  text-align: center;
+}
+
+#button a {
+  font-size: 1.25rem;
+  color: white;
 }
 
 /* Info Banner Section styling */
 .info-banner {
   width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.info-left-half {
   padding: 2rem 1.5rem;
+  max-width: 60%;
+  border-right: 1px solid #e6e6e6;
 }
 
 .info-text-container {
-  width: 60%;
-
+  width: 100%;
 }
 
-.right-half {
-  display: block;
+.info-text-container h2 {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.info-text-container p {
+  margin-bottom: 2rem;
+}
+
+.info-right-half {
+  padding-left: 1rem;
 }
 
 .info-block {
-  width: 26.4375rem;
-  height: 10.5rem;
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
-.right-half .info-block {
+.info-right-half .info-block {
   border: 1px solid #e6e6e6;
+}
+
+.info-text {
+  line-height: 1.75;
 }
 
 .info-block img {
   width: 35%;
-  height: auto;
+  margin: 1rem;
+}
+
+.info-text h6 {
+  margin: .5rem 0;
+}
+
+.info-text a {
+  color: #66a3ff;
+}
+
+.orientation {
+  padding-top: 1rem;
 }
 
 /* Learning Section styling */
