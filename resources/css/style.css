@@ -403,6 +403,10 @@ footer a {
     display: none;
   }
 
+  .mobile {
+    display: none;
+  }
+
 }
 
 
@@ -499,6 +503,10 @@ footer a {
   }
 
   /* Info section styling */
+  .desktop {
+    display: none;
+  }
+
   .info-left-half {
     display: none;
   }
@@ -524,8 +532,6 @@ footer a {
     padding: 0;
     margin: 0;
     width: 97.7%;
-    height: 50%;
-    object-fit: contain;
   }
 
   .info-right-half .info-block .info-text {
