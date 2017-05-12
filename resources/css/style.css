@@ -151,7 +151,7 @@ a {
   justify-content: space-between;
   padding-left: 1.5rem;
   height: 4rem;
-  width: 97.7%;
+  width: 98.2%;
   position: fixed;
   z-index: 10;
   background-color: white;
@@ -181,7 +181,7 @@ header h6 {
   font-size: 1rem;
 }
 
-.desktop-menu {
+.menu {
     display: flex;
     align-items: center;
 }
@@ -398,8 +398,12 @@ footer a {
 
 /* Screen size styling */
 /* Desktop styling */
-@media only screen and (min-width: 481px){
+@media only screen and (min-width: 1116px){
   .header.mobile {
+    display: none;
+  }
+
+  .header.tablet {
     display: none;
   }
 
@@ -409,6 +413,101 @@ footer a {
 
 }
 
+/* First screen size break (larger than tablet, but will function as tablet size)*/
+@media only screen and (max-width: 1115px){
+  .header.desktop {
+    display: none;
+  }
+
+  .header.mobile {
+    display: none;
+  }
+
+  /* Header styling */
+  .header.tablet {
+    width: 97.5%;
+  }
+
+  .header.tablet.menu {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Main banner styling */
+  .main-banner {
+    display: block;
+  }
+
+  .main-left-half {
+    max-width: 100%;
+  }
+
+  .main-left-half .image-container {
+    max-width: 80%;
+    height: auto;
+    margin-left: 4rem;
+  }
+
+  .main-right-half {
+    max-width: 100%;
+  }
+
+  .main-right-half .word-container {
+    padding: 1rem 0 0 1rem;
+  }
+
+  /* Info banner styling */
+  .info-banner {
+    display: block;
+  }
+
+  .info-left-half {
+    border: none;
+    max-width: 100%;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /* Learning section styling */
+  .learning-section {
+    margin-top: 2rem;
+  }
+
+  .courses-container {
+    display: inline-block;
+    flex-wrap: nowrap;
+  }
+
+  .course-box {
+    width: 90%;
+    padding-bottom: .25rem;
+  }
+
+  .course-box.bottom-half {
+    margin-bottom: 1rem;
+  }
+
+  /* Thesis exhbit section styling */
+  .thesis-content {
+    display: block;
+  }
+
+  .thesis-content-left-half {
+    max-width: 100%;
+  }
+
+  .thesis-content-text {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Footer styling */
+  footer {
+    margin-bottom: 1rem;
+  }
+
+}
 
 /* Mobile screen size */
 @media only screen and (max-width: 480px){
@@ -454,6 +553,10 @@ footer a {
     display: none;
   }
 
+  .header.tablet {
+    display: none;
+  }
+
   .header.mobile {
     display: flex;
     justify-content: center;
@@ -461,7 +564,7 @@ footer a {
 
   .header.mobile nav {
     display: flex;
-    width: 100%;
+    width: 98%;
     align-items: center;
     justify-content: space-around;
   }
@@ -502,7 +605,7 @@ footer a {
     margin-bottom: 1.5rem;
   }
 
-  /* Info section styling */
+  /* Info banner section styling */
   .desktop {
     display: none;
   }
