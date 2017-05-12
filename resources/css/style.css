@@ -116,6 +116,13 @@ h2 {
   color: #4d4d4d;
 }
 
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #4d4d4d;
+}
+
 h4 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -126,7 +133,7 @@ h4 {
 h6 {
   font-family: "Oxygen", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: #4d4d4d;
 }
 
@@ -215,7 +222,7 @@ nav span a {
   max-width: 80%;
 }
 
-.word-container h2 {
+.word-container h3 {
   margin: 2rem 0;
 }
 
@@ -412,26 +419,33 @@ footer a {
   h2 {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    color: #4d4d4d;
+  }
+
+  h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
     color: #4d4d4d;
   }
 
   h4 {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     color: #4d4d4d;
   }
 
   h6 {
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: #4d4d4d;
   }
 
 
-  /* Header section */
+  /* Header section styling */
   .header.desktop {
     display: none;
   }
@@ -452,7 +466,7 @@ footer a {
     height: 2rem;
   }
 
-  /* Main banner section */
+  /* Main banner section styling */
   .main-banner {
     display: block;
     padding-top: 4rem;
@@ -484,16 +498,113 @@ footer a {
     margin-bottom: 1.5rem;
   }
 
-  /* Info banner section */
+  /* Info section styling */
   .info-left-half {
     display: none;
   }
 
   .info-right-half {
     padding: 0;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
   }
 
   .info-right-half .info-block  {
     border: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1rem 0 1rem;
   }
+
+ .gray-bkrd {
+    background-color: white;
+  }
+
+  .info-right-half .info-block img {
+    padding: 0;
+    margin: 0;
+    width: 97.7%;
+    height: 50%;
+    object-fit: contain;
+  }
+
+  .info-right-half .info-block .info-text {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    line-height: 1.25;
+    max-width: 80%;
+  }
+
+  /* Learning section styling */
+  .learning-section {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+}
+
+  .courses-container {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .course-box {
+    margin: .5 1rem 1rem .5rem 1rem;
+    width: 100%;
+    background-color: #e6e6e6;
+  }
+
+  .course-box.top-half.software {
+    margin-top: 1rem;
+  }
+
+  .top-half {
+    margin-bottom: .5rem;
+  }
+
+  .bottom-half {
+    margin-bottom: .5rem;
+  }
+
+  .course-box img {
+    display: none;
+  }
+
+  .course-box p {
+    display: none;
+  }
+
+  .box-content {
+    margin-bottom: 1rem;
+  }
+
+  /* Thesis section styling */
+  .thesis-content {
+    margin-bottom: 0rem;
+  }
+
+  .thesis-content-left-half {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .thesis-content-left-half video {
+    width: 100%;
+  }
+
+  .thesis-content-left-half .thesis-content-text {
+    display: none;
+  }
+
+  .thesis-content-right-half {
+    display: none;
+  }
+
+  /* Footer section styling */
+  footer {
+    padding: 1.5rem 0 1rem 0;
+    margin: 0;
+  }
+
+  footer .legal {
+    display: none;
+  }
+
 }
