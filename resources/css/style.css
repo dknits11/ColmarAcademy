@@ -144,7 +144,7 @@ a {
   justify-content: space-between;
   padding-left: 1.5rem;
   height: 4rem;
-  width: 100%;
+  width: 97.7%;
   position: fixed;
   z-index: 10;
   background-color: white;
@@ -405,7 +405,7 @@ footer a {
   h1 {
     font-family: "Raleway", sans-serif;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 2.75rem;
     color: #4d4d4d;
   }
 
@@ -456,27 +456,44 @@ footer a {
   .main-banner {
     display: block;
     padding-top: 4rem;
-    width: 100%;
+    padding-bottom: 0;
   }
 
   .main-left-half {
     margin: 0 0 0 0;
     height: 11.25rem;
-    width: 100%;
+    max-width: 100%;
   }
 
   .main-left-half .image-container img {
-    display: none;
+    height: 11.25rem;
+    object-fit: contain;
   }
 
   .main-right-half {
     padding: 2rem 1rem;
-    width: 100%;
-    margin: 0;
+    margin-left: 0;
+    max-width: 100%;
   }
 
   .word-container {
-    margin: 0;
+    max-width: 100%;
   }
 
+  .main-right-half .word-container h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Info banner section */
+  .info-left-half {
+    display: none;
+  }
+
+  .info-right-half {
+    padding: 0;
+  }
+
+  .info-right-half .info-block  {
+    border: none;
+  }
 }
