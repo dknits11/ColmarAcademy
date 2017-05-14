@@ -232,7 +232,7 @@ nav span a {
   text-align: center;
 }
 
-#button a {
+a #button {
   font-size: 1.25rem;
   color: white;
 }
